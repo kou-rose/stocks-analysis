@@ -15,7 +15,9 @@ It is difficult for me to assess which parts of my code are efficient and which 
 
 I believe most of the issues in my script can be linked to the tickerIndex. In my code I have:
 >For i = 0 To 12
+
 >tickerIndex = tickers(i)
+
 >tickerVolumes(i) = 0
 
 This is what I ended up doing to connect the newly created tickerIndex variable back to the tickers array that was originally present. This code, and it being used to access the original tickers array, is possibly cumbersome in the execution of the later code to increase volume and find the starting and ending prices. That is what I suspect, at least, which is regrettable but how I was able to get the code to run.
