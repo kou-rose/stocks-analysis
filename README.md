@@ -4,5 +4,6 @@ After providing Steve with a means to analyze his dataset of stocks at the click
 
 ##Results
 The results of my attempt at refactoring were mixed. First of all, the refactored code was supposed to run faster than the original code. My did not, as shown below.
+
 ![Resources/VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png) ![Resources/VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png) 
 Rather, my refactored code ended up running roughly .2 seconds slower than the original code. 
