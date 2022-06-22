@@ -14,13 +14,14 @@ Rather, my refactored code ended up running roughly .25 seconds slower than the 
 It is difficult for me to assess which parts of my code are efficient and which parts are bogging the entire process. down. I made a point to refer back to the original script when writing the code to increase the volume and when assigning the starting and closing prices.
 
 I believe most of the issues in my script can be linked to the tickerIndex. In my code I have:
-	For i = 0 To 12
-	tickerIndex = tickers(i)
-	tickerVolumes(i) = 0
+For i = 0 To 12
+tickerIndex = tickers(i)
+tickerVolumes(i) = 0
+
 This is what I ended up doing to connect the newly created tickerIndex variable back to the tickers array that was originally present. This code, and it being used to access the original tickers array, is possibly cumbersome in the execution of the later code to increase volume and find the starting and ending prices. That is what I suspect, at least, which is regrettable but how I was able to get the code to run.
 
 ## Summary
-Overall, this was a challenge I struggled with for a variety of reasons. I feel like I understand the concept of what I was doing, but perhaps not the finer points of refactoring or what it is intended to look like, how just how much of the original script I should be altering.
+Overall, this was a challenge I struggled with for a variety of reasons. I feel like I understand the individual concepts of what I was meant to be doing, but perhaps not the finer points of refactoring and how I need to be going about it.
 
 In terms of advantages and disadvantages on the whole of refactoring, I would say that it is an advantage that when refactoring a code you already know exactly what it is you want the code to do. You already know how it runs. There may be bits you have to figure out, such as what to add and what to remove, but the outcome being worked towards is fully fledged out to start with, which is an advantage depending on your skillset.
 
